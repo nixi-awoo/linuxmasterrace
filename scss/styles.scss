@@ -1,0 +1,112 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+//
+// Fonts
+@font-face {
+	font-family: 'lato';
+	src: url('../fonts/Lato-Regular.eot');
+  src:
+  	url('../fonts/Lato-Regular.otf')
+  	format('opentype');
+  src:
+  	url('../fonts/Lato-Regular.ttf')
+  	format('truetype');
+}
+
+
+//
+// Helper Classes
+.text-center {
+  text-align: center;
+}
+
+.content-gray {
+  background: $gray-lighter !important;
+}
+
+//
+// Custom Styles
+
+// General
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url('../img/linear.jpg') center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+hr {
+  margin: 60px 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 30px 0 20px 0;
+}
+
+// Custom
+.menu {
+  text-align: center;
+
+  .navbar {
+    background: rgba(50, 50, 50, 0.1);
+    border: none;
+
+    a {
+      color: $body-bg;
+      padding: 20px 0;
+    }
+    a:hover,a:active,a:visited {
+      background: rgba(50, 50, 50, 0.1);
+    }
+  }
+
+  h1 {
+    color: $body-bg;
+    margin: 70px 0;
+  }
+}
+
+.content {
+  background: $body-bg;
+  padding: 50px 0;
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  button {
+    margin-bottom: 40px;
+  }
+}
+
+.separator {
+  background: rgba(50, 50, 50, 0.4);
+  color: $body-bg;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.footer {
+  background: $gray-darker;
+  color: $body-bg;
+  padding: 50px 0;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  h3 {
+    color: $gray-light;
+    margin-top: 0;
+  }
+}
